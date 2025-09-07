@@ -1,0 +1,44 @@
+{
+  "model_name": "MLP",
+  "n_folds": 5,
+  "n_samples": 1000,
+  "group_key": "hashpatientid",
+  "random_seed": 42,
+  "created_at": "2025-08-30T15:20:05.977991",
+  "summary_results": {
+    "MAE": {
+      "mean": 28.06235596335778,
+      "std": 3.699284655901539,
+      "min": 22.90777440188654,
+      "max": 33.66366711054895
+    },
+    "RMSE": {
+      "mean": 39.19890899034483,
+      "std": 5.811959092772383,
+      "min": 31.722887945842583,
+      "max": 47.68988044844872
+    },
+    "R2": {
+      "mean": -0.2542294967360915,
+      "std": 0.05817073578783499,
+      "min": -0.34047361462411074,
+      "max": -0.17518837969406298
+    }
+  },
+  "model_config": {
+    "hidden_dims": [
+      256,
+      128,
+      64
+    ],
+    "dropout_rate": 0.3,
+    "activation": "relu"
+  },
+  "training_config": {
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 15,
+    "max_epochs": 100,
+    "batch_size": 64
+  }
+}

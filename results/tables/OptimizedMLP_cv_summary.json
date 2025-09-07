@@ -1,0 +1,44 @@
+{
+  "model_name": "OptimizedMLP",
+  "n_folds": 5,
+  "n_samples": 1000,
+  "group_key": "hashpatientid",
+  "random_seed": 42,
+  "created_at": "2025-08-31T13:32:04.143244",
+  "summary_results": {
+    "MAE": {
+      "mean": 88.80547598167855,
+      "std": 7.645048755650963,
+      "min": 80.14004713058472,
+      "max": 102.50308137908578
+    },
+    "RMSE": {
+      "mean": 122.33020636675818,
+      "std": 59.49802859008594,
+      "min": 88.26167617010272,
+      "max": 241.07908214010516
+    },
+    "R2": {
+      "mean": -15.382843145108902,
+      "std": 19.09324826912909,
+      "min": -53.505741988431296,
+      "max": -4.695640632236122
+    }
+  },
+  "model_config": {
+    "hidden_dims": [
+      64,
+      32,
+      16
+    ],
+    "dropout_rate": 0.5,
+    "activation": "leaky_relu"
+  },
+  "training_config": {
+    "learning_rate": 0.0005,
+    "weight_decay": 0.001,
+    "patience": 5,
+    "max_epochs": 50,
+    "batch_size": 32
+  }
+}

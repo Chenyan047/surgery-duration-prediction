@@ -1,0 +1,27 @@
+submission:
+  # 仅允许最终单个 PDF
+  allow:
+    - dist/Final_Submission.pdf
+  deny:
+    - "**/*.ipynb"
+    - "**/*.py"
+    - "**/*.csv"
+    - "**/*.xlsx"
+    - "**/*.docx"
+    - "cache/**"
+    - "outputs/**"
+    - "figs/**"          # 图会被嵌入PDF，不单独提交
+    - "models/**"
+    - "logs/**"
+  checks:
+    body_pages_exact: 5           # 正文恰好5页
+    require_sections:             # 最低结构要求
+      - Introduction
+      - Literature Review
+      - Methods
+      - Results
+      - Discussion
+      - Conclusion
+  notes:
+    - "附录并入 Final_Submission.pdf 尾部，不能单独交。"
+    - "使用 TUM Corporate Design（Word/LaTeX 模板），字体 Arial 11。"

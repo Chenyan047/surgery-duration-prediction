@@ -1,0 +1,165 @@
+{
+  "advanced_features": {
+    "feature_names": [
+      "pca_component_0",
+      "pca_component_1",
+      "pca_component_2",
+      "pca_component_3",
+      "pca_component_4",
+      "pca_component_5",
+      "pca_component_6",
+      "pca_component_7",
+      "pca_component_8",
+      "pca_component_9",
+      "pca_component_10",
+      "pca_component_11",
+      "pca_component_12",
+      "pca_component_13",
+      "pca_component_14"
+    ],
+    "selected_features": [
+      "urgencytype_1",
+      "duration_min_log",
+      "surgery_hour_sin",
+      "servsqnum_y",
+      "servsqnum_x",
+      "unnamed:_0.1",
+      "eg_charlsscore",
+      "unnamed:_0",
+      "surgerytypes_1",
+      "surgerytypes_3",
+      "surgery_hour_cos",
+      "urgencytype_3",
+      "op_startdttm_fix_hour",
+      "doc_מרדם",
+      "bmi2",
+      "surgery_hour",
+      "doc_אחמס",
+      "doc_מנמש",
+      "los",
+      "doc_בחור",
+      "doc_מנכמ",
+      "doc_אחרח",
+      "mem_דמ.גנצ'ורי",
+      "ageatsurgery",
+      "originalunitid_111132.0",
+      "num_surg_anes_worked",
+      "number_of_lab_test_120",
+      "v2_mem_יל.סיגלוב",
+      "members_count",
+      "doc_מנתע"
+    ],
+    "feature_count": 15,
+    "feature_reduction": {
+      "original": 1727,
+      "after_advanced": 1734,
+      "after_aggregation": 1199,
+      "after_time_features": 1204,
+      "numerical_only": 1154,
+      "after_selection": 30,
+      "final": 15
+    },
+    "target_transformation": {
+      "transformation": "log1p",
+      "inverse_func_name": "lambda_function",
+      "stats_before": {
+        "mean": 90.47243333333333,
+        "std": 35.51165528653937
+      },
+      "stats_after": {
+        "mean": 4.451211930134384,
+        "std": 0.35273338283648936,
+        "skewness": 0.34144921017344176,
+        "kurtosis": 0.2457959931899869
+      }
+    }
+  },
+  "created_at": "2025-08-31T13:36:40.253188",
+  "metadata": {
+    "feature_names": [
+      "pca_component_0",
+      "pca_component_1",
+      "pca_component_2",
+      "pca_component_3",
+      "pca_component_4",
+      "pca_component_5",
+      "pca_component_6",
+      "pca_component_7",
+      "pca_component_8",
+      "pca_component_9",
+      "pca_component_10",
+      "pca_component_11",
+      "pca_component_12",
+      "pca_component_13",
+      "pca_component_14"
+    ],
+    "selected_features": [
+      "urgencytype_1",
+      "duration_min_log",
+      "surgery_hour_sin",
+      "servsqnum_y",
+      "servsqnum_x",
+      "unnamed:_0.1",
+      "eg_charlsscore",
+      "unnamed:_0",
+      "surgerytypes_1",
+      "surgerytypes_3",
+      "surgery_hour_cos",
+      "urgencytype_3",
+      "op_startdttm_fix_hour",
+      "doc_מרדם",
+      "bmi2",
+      "surgery_hour",
+      "doc_אחמס",
+      "doc_מנמש",
+      "los",
+      "doc_בחור",
+      "doc_מנכמ",
+      "doc_אחרח",
+      "mem_דמ.גנצ'ורי",
+      "ageatsurgery",
+      "originalunitid_111132.0",
+      "num_surg_anes_worked",
+      "number_of_lab_test_120",
+      "v2_mem_יל.סיגלוב",
+      "members_count",
+      "doc_מנתע"
+    ],
+    "target_transformation": {
+      "transformation": "log1p",
+      "inverse_func_name": "lambda_function",
+      "stats_before": {
+        "mean": 90.47243333333333,
+        "std": 35.51165528653937
+      },
+      "stats_after": {
+        "mean": 4.451211930134384,
+        "std": 0.35273338283648936,
+        "skewness": 0.34144921017344176,
+        "kurtosis": 0.2457959931899869
+      }
+    },
+    "feature_pipeline": {
+      "imputer_type": "SimpleImputer",
+      "scaler_type": "RobustScaler",
+      "use_pca": true
+    },
+    "X_shape": [
+      1000,
+      15
+    ],
+    "y_shape": [
+      1000
+    ],
+    "target_col": "duration_min",
+    "feature_reduction": {
+      "original": 1727,
+      "after_advanced": 1734,
+      "after_aggregation": 1199,
+      "after_time_features": 1204,
+      "numerical_only": 1154,
+      "after_selection": 30,
+      "final": 15
+    }
+  }
+}
